@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Automatización e inteligencia artificial</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+   <div class="menu">
+  <div class="menu-toggle" id="menuToggle">☰</div>
+  <ul id="menuLista">
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#asistente">Asistente</a></li>
+    <li><a href="#recursos">Recursos</a></li>
+    <li><a href="#desafio">Desafío</a></li>
+    <li><a href="#galeria">Galería</a></li>
+    <li><a href="#mapa">Mapa</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+    <li><a href="#acerca">Acerca de mí</a></li>
+  </ul>
+</div>
+  </header>
+
+  <main>
+    <section id="inicio" class="section">
+      <h1>Bienvenidos a mi página</h1>
+      <p>Explorá cómo la inteligencia artificial, el diseño visual y la automatización se unen para crear experiencias educativas únicas.</p>
+      <p>Este sitio es un espacio interactivo donde comparto mis proyectos, ideas y herramientas que integran tecnología, arte y aprendizaje.</p>
+      <a href="#asistente" class="boton-destacado">Conocé al asistente virtual</a>
+    </section>
+
+    <section id="asistente" class="section">
+      <h2>Asistente Virtual</h2>
+      <div class="chatbox">
+        <div id="chatlog" class="chatlog"></div>
+        <div class="chat-controls">
+          <input type="text" id="userInput" placeholder="Escribí tu mensaje aquí..." />
+          <button id="enviarBtn">Enviar</button>
+          <button id="borrarBtn">Borrar</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="recursos" class="section">
+      <h2>Recursos sobre IA y Automatización</h2>
+      <div class="video-galeria">
+        <div class="video-item">
+          <iframe src="https://www.youtube.com/embed/2ePf9rue1Ao" title="¿Qué es la inteligencia artificial?" frameborder="0" allowfullscreen></iframe>
+          <p>¿Qué es la inteligencia artificial?</p>
+        </div>
+        <div class="video-item">
+          <iframe src="https://www.youtube.com/embed/_oF-XcramiE?si=2H5i952ezHePOHcv" title="Automatizaciones Guia 2025" frameborder="0" allowfullscreen></iframe>
+          <p>Automatización Guía 2025</p>
+        </div>
+        <div class="video-item">
+          <iframe src="https://www.youtube.com/embed/EEBiMe57Dgg?si=i6N8mMbNHdUwlK5i" title="Aplicaciones de IA en educación" frameborder="0" allowfullscreen></iframe>
+          <p>Aplicaciones de IA en educación</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="desafio" class="section">
+      <h2> Desafío de Automatización</h2>
+      <p>Elegí una condición y una acción automática para ver cómo funciona la lógica detrás de la automatización:</p>
+
+      <label for="condicion">Condición:</label>
+      <select id="condicion">
+        <option value="saludo">Cuando el usuario escribe "hola"</option>
+        <option value="clic">Cuando se hace clic en el botón</option>
+      </select>
+
+      <label for="accion">Acción:</label>
+      <select id="accion">
+        <option value="color">Cambiar color de fondo</option>
+        <option value="mensaje">Mostrar mensaje educativo</option>
+        <option value="imagen">Mostrar ilustración</option>
+      </select>
+
+      <button id="activarBtn">Activar</button>
+      <button id="reiniciarBtn">Reiniciar</button>
+
+      <div id="resultado"></div>
+    </section>
+
+    <section id="galeria" class="section">
+      <h2>Galería de Imágenes</h2>
+      <div class="galeria">
+        <img src="automatizacion.jpg" alt="Automatización con IA" />
+        <img src="asistente.png" alt="Asistente Virtual" />
+        <img src="flujo de datos.jpg" alt="Flujo de datos automatizado" />
+      </div>
+    </section>
+
+    <section id="mapa" class="section">
+      <h2>Mapa de Ubicación</h2>
+      <div class="mapa-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3550.123456789!2d-57.558123!3d-25.339456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945da7f123456789%3A0xabcdef123456789!2sSan%20Lorenzo%2C%20Paraguay!5e0!3m2!1ses!2spy!4v1691234567890" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <section id="contacto" class="section">
+      <h2>Contacto</h2>
+      <form class="formulario">
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required />
+        </div>
+        <div class="campo">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="campo">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        </div>
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </section>
+
+   <section id="acerca" class="section">
+  <h2>Acerca de mí</h2>
+  <p>Hola, soy Patricia, estudiante del Técnico Superior en TIC con especialización en Desarrollo de Aplicaciones Informáticas. Actualmente estoy cursando el primer trimestre de la Licenciatura en Ciencias Informáticas en University of the People, y también estoy en formación para obtener la certificación internacional CCNA de Cisco. Me apasiona explorar cómo la tecnología puede integrarse con el arte y la educación para crear experiencias digitales que sorprendan, enseñen y conecten.</p>
+
+  <p>En mis proyectos aplico conocimientos de HTML, CSS, JavaScript y diseño UX/UI para construir interfaces intuitivas, funcionales y visualmente atractivas. Me especializo en ilustraciones educativas, automatización con inteligencia artificial y herramientas interactivas que mejoran la experiencia del usuario. Cada detalle cuenta: desde un favicon personalizado hasta un menú que responde con suavidad y estilo.</p>
+
+  <p>Este sitio forma parte de mi portafolio profesional, donde comparto ideas, desafíos y soluciones que nacen del aprendizaje constante y la curiosidad creativa. Me gusta iterar, probar, ajustar y volver a empezar, siempre buscando formas auténticas de comunicar y enseñar. Si algo te inspira o te intriga, ¡estás invitado a explorar conmigo!</p>
+</section>
+  </main>
+
+  <footer>
+    <p>Creado por Patty • Proyecto interactivo educativo</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
